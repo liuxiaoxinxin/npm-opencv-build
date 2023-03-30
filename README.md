@@ -7,6 +7,7 @@ A simple script to auto build recent OpenCV + contrib version via npm. This scri
 
 ## Main changes from the original project
 
+- [🔥] Support Electron, can be set externally `process.env.OPENCV_BIN_DIR` `process.env.OPENCV_LIB_DIR` `process.env.OPENCV_INCLUDE_DIR`. Thus adapt  different of development directories and production directories.
 - OpenCV is explicitly build with `opencv-build-npm` and accepting parametes see `opencv-build-npm --help`
 - OpenCV build can now be configured with `new OpenCVBuilder({autoBuildOpencvVersion: "3.4.16", autoBuildBuildCuda: true, autoBuildWithoutContrib: false }).install()`
 - Each OPENCV_VERSION will be build in his own directory.
